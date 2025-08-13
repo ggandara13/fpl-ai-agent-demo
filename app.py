@@ -1257,9 +1257,9 @@ def main():
 
     
     # Header - with logo
-    col_logo, col_title = st.columns([1, 4])
+    col_logo, col_title = st.columns([2, 4])
     with col_logo:
-        st.image("https://newsroom.nexteraenergy.com/images/nextera_logo.jpg", width=300)
+        st.image("https://newsroom.nexteraenergy.com/images/nextera_logo.jpg", width=500)
     with col_title:
         st.title("⚡ FPL Multi-Level AI Agent Demo")
         st.markdown("### Demonstrating the 3 Pillars: 🧠 Brain (LLM) + 💾 Memory + 🎯 Goals")
