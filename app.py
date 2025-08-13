@@ -1253,17 +1253,24 @@ def main():
         st.session_state.agent = MultiLevelAgent(api_key=st.session_state.api_key)
         st.session_state.last_api_key = st.session_state.api_key
         st.rerun()
+
+
     
     # Header
-    st.title("⚡ FPL Multi-Level AI Agent Demo")
-    st.markdown("### Demonstrating the 3 Pillars: 🧠 Brain (LLM) + 💾 Memory + 🎯 Goals")
+    # Add logo here - RIGHT BEFORE the title
+    col_logo, col_title = st.columns([1, 4])
+    with col_logo:
+        st.image("https://newsroom.nexteraenergy.com/images/nextera_logo.jpg", width=150)
+    with col_title:
+        st.title("⚡ FPL Multi-Level AI Agent Demo")
+        st.markdown("### Demonstrating the 3 Pillars: 🧠 Brain (LLM) + 💾 Memory + 🎯 Goals")
     
     # Main layout
     col1, col2 = st.columns([2, 1])
     
     with col1:
         # AI Level Selector
-        st.markdown("### 🎚️ Select AI Sophistication Level")
+        st.markdown("### Select AI Sophistication Level")
         
         level_col1, level_col2, level_col3, level_col4 = st.columns(4)
         
